@@ -23,7 +23,7 @@ public class LI_leaveEvent implements Listener{
 			for(int i = 0; i < uuids.size();i++) {
 				if(!(Bukkit.getPlayer(UUID.fromString(uuids.get(i))) == null)) {
 					Player targ = Bukkit.getPlayer(UUID.fromString(uuids.get(i)));
-					targ.sendMessage("§6"+InventoryManager.getOnlineCustomName(p, targ)+" §7ist nun §coffline");
+					targ.sendMessage("Â§6"+InventoryManager.getOnlineCustomName(p, targ)+" Â§7ist nun Â§coffline");
 				}
 			}
 		}
