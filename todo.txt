@@ -1,0 +1,55 @@
+Inventar:
+✔ Inventar Köpfe (§6§l {name})
+ - Siehe Köpfe
+✘ Inventar Delete (BARRIER)
+✘ Inventar Accept (MAP)
+ - Siehe Map
+✘ Inventar Friendmenu (Gold)
+✘ Inventar Partymenu (lila wool)
+✘ Inventar Party
+
+
+Listener:
+✔ joinEvent 
+✔ LeaveEvent
+✔ Inventoryclick
+✘ Scoreboard
+
+
+Command:
+✔ Adden  
+✔ Accept
+✔ Decline
+✔ Delete 
+✘ List
+- Siehe Inventar
+✔ Clickable Add Message
+ - §6 {name} hat dich geaddet!
+ - §6[§aAnnehmen§6] [§cLöschen§6]
+✘ Log YAML 
+ - InventoryManager:28
+ 	- Person war noch nie aufm Server!
+ - FriendManager:113
+ 
+ - Alle Fehler werden in der log.yml angezeigt
+✘ Log Abarbeiten
+✘ Message/Reponse
+
+
+Köpfe:
+✔  Namen ändern
+✔ Delete
+✔  Message schreiben (Open chat with suggest command #not finished)
+ 
+Map:
+ Lore with counter
+ Inventory (§b§lFreundschaftsanfragen)
+ Accept Decline Inventory with (§1§l {name})
+
+
+
+#FEHLER
+- InventoryManager:51  NULLPOINTER
+- Customname fehlt: (gelöst!)
+- leave and join: (gelöst!)
+- FRIEND ADD/Wenn ein spieler jemanden added, dann offline geht und danach der receiver annimmt kommt ein Fehler!: NULLPOINTER (gelöst!)
