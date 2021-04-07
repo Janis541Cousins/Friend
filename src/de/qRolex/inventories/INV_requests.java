@@ -9,7 +9,7 @@ import de.qRolex.items.ITEMHOLDER_friends;
 
 public class INV_requests {
 	public static Inventory inv(Player p, String target) {
-		Inventory inv = Bukkit.getServer().createInventory(null, 54, "§b§lFreundschaftsanfragen");
+		Inventory inv = Bukkit.getServer().createInventory(null, 54, "Â§bÂ§lFreundschaftsanfragen");
 		
 		for(int i = 36; i<= 44; i++) {
 			inv.setItem(i, ITEMHOLDER_friends.placeholder());
