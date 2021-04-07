@@ -13,7 +13,7 @@ import de.qRolex.manager.InventoryManager;
 public class INV_friends  {
 	
 	public static Inventory inv(Player p) {
-		Inventory inv = Bukkit.getServer().createInventory(null, 54, "§b§lFriends");
+		Inventory inv = Bukkit.getServer().createInventory(null, 54, "Â§bÂ§lFriends");
 		
 		if(FriendManager.hasFriends(p)) {
 			ArrayList<String> friends = InventoryManager.getFriendUUIDS(p);
