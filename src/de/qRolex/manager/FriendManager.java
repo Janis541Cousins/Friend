@@ -70,7 +70,7 @@ public class FriendManager {
 			
 			adder.sendMessage(main.prefix+"Du hast den Spieler geaddet");
 		}else {
-			Bukkit.getServer().broadcastMessage("§4FEHLER!");
+			Bukkit.getServer().broadcastMessage("Â§4FEHLER!");
 		}
 	}
 	
@@ -114,7 +114,7 @@ public class FriendManager {
 			
 			try {
 				cfg.save(YAML_class.getFile());
-				p.sendMessage(main.prefix+"§cDu hast §6"+target.getName()+" §caus deiner FL entfernt!");
+				p.sendMessage(main.prefix+"Â§cDu hast Â§6"+target.getName()+" Â§caus deiner FL entfernt!");
 				p.closeInventory();
 				if(!(Bukkit.getPlayer(target.getName()) == null)) {
 					Bukkit.getPlayer(target.getName()).closeInventory();
@@ -124,10 +124,10 @@ public class FriendManager {
 				for(Player ps : Bukkit.getOnlinePlayers()) {
 					if(ps.isOp()) {
 						ps.sendMessage("");
-						ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-						ps.sendMessage("§4§lBei §r§c"+target+"§4§l ist ein Fehler aufgetreten");
+						ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+						ps.sendMessage("Â§4Â§lBei Â§rÂ§c"+target+"Â§4Â§l ist ein Fehler aufgetreten");
 						ps.sendMessage(e.getMessage());
-						ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+						ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 						ps.sendMessage("");
 					}
 				}
