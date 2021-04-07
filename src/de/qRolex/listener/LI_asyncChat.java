@@ -20,7 +20,7 @@ public class LI_asyncChat implements Listener {
 			if(InventoryManager.isCustomNameAlreadyInUse(p, msg)) {InventoryManager.nextChatIsNameChange.remove(p);e.setCancelled(true);return;}
 			
 			
-			p.sendMessage(main.prefix+"Sein Spitzname ist nun ง6"+msg+"งa!");
+			p.sendMessage(main.prefix+"Sein Spitzname ist nun ยง6"+msg+"ยงa!");
 			HashMap<String,String> changeName = new HashMap<String,String>();
 			changeName.put(InventoryManager.nextChatIsNameChange.get(p), msg);
 			InventoryManager.newName.put(p, changeName);
