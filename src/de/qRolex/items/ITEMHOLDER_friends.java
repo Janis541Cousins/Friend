@@ -23,9 +23,9 @@ public class ITEMHOLDER_friends {
 	public static ItemStack party() {
 		ItemStack is = new ItemStack(Material.WOOL, 1, DyeColor.MAGENTA.getData());
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§5Party");
+		im.setDisplayName("Â§5Party");
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Partymenü");
+		lore.add("Â§oÂ§7PartymenÃ¼");
 		im.setLore(lore);
 		is.setItemMeta(im);
 		return is;
@@ -34,9 +34,9 @@ public class ITEMHOLDER_friends {
 	public static ItemStack friends() {
 		ItemStack is = new ItemStack(Material.GOLD_INGOT);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§6Freunde");
+		im.setDisplayName("Â§6Freunde");
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Freundemenü");
+		lore.add("Â§oÂ§7FreundemenÃ¼");
 		im.setLore(lore);
 		is.setItemMeta(im);
 		return is;
@@ -46,9 +46,9 @@ public class ITEMHOLDER_friends {
 	public static ItemStack partyCLICK() {
 		ItemStack is = new ItemStack(Material.WOOL, 1, DyeColor.MAGENTA.getData());
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§5§lParty");
+		im.setDisplayName("Â§5Â§lParty");
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Partymenü");
+		lore.add("Â§oÂ§7PartymenÃ¼");
 		im.setLore(lore);
 		is.setItemMeta(im);
 		return is;
@@ -57,9 +57,9 @@ public class ITEMHOLDER_friends {
 	public static ItemStack friendsCLICK() {
 		ItemStack is = new ItemStack(Material.GOLD_INGOT);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§6§lFreunde");
+		im.setDisplayName("Â§6Â§lFreunde");
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Freundemenü");
+		lore.add("Â§oÂ§7FreundemenÃ¼");
 		im.setLore(lore);
 		im.addEnchant(Enchantment.ARROW_DAMAGE, -1, true);
 		im.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -71,9 +71,9 @@ public class ITEMHOLDER_friends {
 		ItemStack is = new ItemStack(Material.BARRIER);
 		ItemMeta im = is.getItemMeta();
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Freunde löschen");
+		lore.add("Â§oÂ§7Freunde lÃ¶schen");
 		im.setLore(lore);
-		im.setDisplayName("§4Löschen");
+		im.setDisplayName("Â§4LÃ¶schen");
 		is.setItemMeta(im);
 		return is;
 	}
@@ -82,8 +82,8 @@ public class ITEMHOLDER_friends {
 		ItemStack is = new ItemStack(Material.EMPTY_MAP);
 		ItemMeta im = is.getItemMeta();
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Freundschaftsanfragen: §r§a"+InventoryManager.getReceiveNumber(p));
-		im.setDisplayName("§bFreundschaftsanfragen");
+		lore.add("Â§oÂ§7Freundschaftsanfragen: Â§rÂ§a"+InventoryManager.getReceiveNumber(p));
+		im.setDisplayName("Â§bFreundschaftsanfragen");
 		im.setLore(lore);
 		im.addItemFlags(ItemFlag.HIDE_DESTROYS);
 		is.setItemMeta(im);
@@ -94,8 +94,8 @@ public class ITEMHOLDER_friends {
 		ItemStack is = new ItemStack(Material.EMPTY_MAP);
 		ItemMeta im = is.getItemMeta();
 		List<String> lore = new ArrayList<String>();
-		lore.add("§o§7Freundschaftsanfragen: §r§a"+InventoryManager.getReceiveNumber(p));
-		im.setDisplayName("§bFreundschaftsanfragen");
+		lore.add("Â§oÂ§7Freundschaftsanfragen: Â§rÂ§a"+InventoryManager.getReceiveNumber(p));
+		im.setDisplayName("Â§bFreundschaftsanfragen");
 		im.setLore(lore);
 		im.addItemFlags(ItemFlag.HIDE_DESTROYS);
 		im.addEnchant(Enchantment.ARROW_DAMAGE, -1, true);
@@ -108,7 +108,7 @@ public class ITEMHOLDER_friends {
 		@SuppressWarnings("deprecation")
 		ItemStack is = new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.GRAY.getData());
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§8 ");
+		im.setDisplayName("Â§8 ");
 		is.setItemMeta(im);
 		return is;
 	}
@@ -121,12 +121,12 @@ public class ITEMHOLDER_friends {
 			SkullMeta im = (SkullMeta) is.getItemMeta();
 			List<String> lore = new ArrayList<String>();
 			
-			lore.add("§aOnline");
+			lore.add("Â§aOnline");
 			
 			
 			im.setOwner(p.getName());
-//			im.setDisplayName("§6"+p.getName());
-			im.setDisplayName("§6"+InventoryManager.getOnlineCustomName(p,owner));
+//			im.setDisplayName("Â§6"+p.getName());
+			im.setDisplayName("Â§6"+InventoryManager.getOnlineCustomName(p,owner));
 			im.setLore(lore);
 			is.setItemMeta(im);
 			return is;
@@ -136,10 +136,10 @@ public class ITEMHOLDER_friends {
 			OfflinePlayer p = Bukkit.getOfflinePlayer(UUID.fromString(uuid));
 			List<String> lore = new ArrayList<String>();
 			
-			lore.add("§cOffline");
+			lore.add("Â§cOffline");
 			
-//			im.setDisplayName("§6"+p.getName());
-			im.setDisplayName("§6"+InventoryManager.getOfflineCustomName(p,owner));
+//			im.setDisplayName("Â§6"+p.getName());
+			im.setDisplayName("Â§6"+InventoryManager.getOfflineCustomName(p,owner));
 			im.setLore(lore);
 			is.setItemMeta(im);
 			
@@ -151,7 +151,7 @@ public class ITEMHOLDER_friends {
 	public static ItemStack back() {
 		ItemStack is = new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.RED.getData());
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§cZurück");
+		im.setDisplayName("Â§cZurÃ¼ck");
 		is.setItemMeta(im);
 		return is;
 	}
