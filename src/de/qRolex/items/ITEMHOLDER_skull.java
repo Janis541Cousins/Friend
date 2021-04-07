@@ -9,7 +9,7 @@ public class ITEMHOLDER_skull {
 	public static ItemStack delete() {
 		ItemStack is = new ItemStack(Material.BARRIER);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§cLöschen");
+		im.setDisplayName("Â§cLÃ¶schen");
 		is.setItemMeta(im);
 		return is;
 	}
@@ -17,7 +17,7 @@ public class ITEMHOLDER_skull {
 	public static ItemStack msg() {
 		ItemStack is = new ItemStack(Material.PAPER);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§bNachricht schreiben");
+		im.setDisplayName("Â§bNachricht schreiben");
 		is.setItemMeta(im);
 		return is;
 	}
@@ -25,7 +25,7 @@ public class ITEMHOLDER_skull {
 	public static ItemStack name() {
 		ItemStack is = new ItemStack(Material.NAME_TAG);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName("§aNamen ändern");
+		im.setDisplayName("Â§aNamen Ã¤ndern");
 		is.setItemMeta(im);
 		return is;
 	}
