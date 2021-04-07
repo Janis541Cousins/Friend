@@ -16,15 +16,15 @@ public class main extends JavaPlugin {
 	
 	YAML_class file = new YAML_class();
 	
-	public static String prefix ="§6[§3Friend§6] §a";
-	public static String prefixA ="§6[§3Friend§6] §4";
-	public static String prefixR ="§6[§3Friend§6] §4Du kannst den Befehl nicht ausführen!";
-	public static String prefixB ="§6[§3Friend§6] §4Diesen Befehl gibt es nicht!";
+	public static String prefix ="Â§6[Â§3FriendÂ§6] Â§a";
+	public static String prefixA ="Â§6[Â§3FriendÂ§6] Â§4";
+	public static String prefixR ="Â§6[Â§3FriendÂ§6] Â§4Du kannst den Befehl nicht ausfÃ¼hren!";
+	public static String prefixB ="Â§6[Â§3FriendÂ§6] Â§4Diesen Befehl gibt es nicht!";
 	
-	public static String prefixP ="§6[§5Party§6] §a";
-	public static String prefixAP ="§6[§5Party§6] §4";
-	public static String prefixRP ="§6[§5Party§6] §4Du kannst den Befehl nicht ausführen!";
-	public static String prefixBP ="§6[§5Party§6] §4Diesen Befehl gibt es nicht!";
+	public static String prefixP ="Â§6[Â§5PartyÂ§6] Â§a";
+	public static String prefixAP ="Â§6[Â§5PartyÂ§6] Â§4";
+	public static String prefixRP ="Â§6[Â§5PartyÂ§6] Â§4Du kannst den Befehl nicht ausfÃ¼hren!";
+	public static String prefixBP ="Â§6[Â§5PartyÂ§6] Â§4Diesen Befehl gibt es nicht!";
 	
 	public void onEnable() {
 		registerListener();
