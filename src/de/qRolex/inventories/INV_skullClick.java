@@ -37,10 +37,10 @@ public class INV_skullClick {
 		}
 		
 		if(name == null) {
-			p.sendMessage("ง4KONTAKTIEREN SIE UMGEHEND EINEN ADMIN");
+			p.sendMessage("ยง4KONTAKTIEREN SIE UMGEHEND EINEN ADMIN");
 		}
 		
-		Inventory inv = Bukkit.getServer().createInventory(null, 27, "ง6งl"+name);
+		Inventory inv = Bukkit.getServer().createInventory(null, 27, "ยง6ยงl"+name);
 		
 		
 		for(int i = 0; i<= 7; i++) {
