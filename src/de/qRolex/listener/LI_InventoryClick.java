@@ -21,7 +21,7 @@ public class LI_InventoryClick implements Listener{
 	public void onInvClickEvent(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
 		
-		if(e.getInventory().getName().equalsIgnoreCase("§b§lFriends")) {
+		if(e.getInventory().getName().equalsIgnoreCase("Â§bÂ§lFriends")) {
 			if(e.getCurrentItem() == null) {return;}
 			Material item = e.getCurrentItem().getType();
 			if(item.equals(Material.AIR)) {e.setCancelled(true);return;}
@@ -36,18 +36,18 @@ public class LI_InventoryClick implements Listener{
 				}
 			}else {
 				//SKULL CLICK EVENT
-				String[] spl = e.getCurrentItem().getItemMeta().getDisplayName().split("§6");
+				String[] spl = e.getCurrentItem().getItemMeta().getDisplayName().split("Â§6");
 				InventoryManager.openSkullInventory(p, spl[1]);
 			}
 		}else
-		if(e.getInventory().getName().equalsIgnoreCase("§6§lnull")) {
+		if(e.getInventory().getName().equalsIgnoreCase("Â§6Â§lnull")) {
 			e.setCancelled(true);
 			p.closeInventory();
 			return;
 		}else {
-			if(!e.getInventory().getName().startsWith("§6§l")) {e.setCancelled(false);return;}
+			if(!e.getInventory().getName().startsWith("Â§6Â§l")) {e.setCancelled(false);return;}
 //			UM DEN REALNAME DES SPIELERS HERAUSZUFINDEN
-			String[] invName = e.getInventory().getName().split("§6§l");
+			String[] invName = e.getInventory().getName().split("Â§6Â§l");
 			String customNameOfPlayer = invName[1];
 			ArrayList<String> uuids = InventoryManager.getFriendUUIDS(p);
 			String uuid = "";
@@ -69,7 +69,7 @@ public class LI_InventoryClick implements Listener{
 			}
 			
 			if(name == null) {
-				p.sendMessage("§4KONTAKTIEREN SIE UMGEHEND EINEN ADMIN");
+				p.sendMessage("Â§4KONTAKTIEREN SIE UMGEHEND EINEN ADMIN");
 			}
 			
 			
@@ -78,26 +78,26 @@ public class LI_InventoryClick implements Listener{
 			Material item = e.getCurrentItem().getType();
 			if(item.equals(Material.AIR)) {e.setCancelled(true);return;}
 			
-			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cZurück")) {
+			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Â§cZurÃ¼ck")) {
 				InventoryManager.openInventory(p);
 				e.setCancelled(true);
 				return;
 			}else
-			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aNamen ändern")) {
+			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Â§aNamen Ã¤ndern")) {
 				InventoryManager.nextChatIsNameChange.put(p,name);
-				p.sendMessage("§8<<");
-				p.sendMessage("§aSchreib jetzt den Spitznamen von §6"+name+"§a rein!");
-				p.sendMessage("§8<<");
+				p.sendMessage("Â§8<<");
+				p.sendMessage("Â§aSchreib jetzt den Spitznamen von Â§6"+name+"Â§a rein!");
+				p.sendMessage("Â§8<<");
 				
 				p.closeInventory();
 			}else
-			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§bNachricht schreiben")) {
-				p.sendMessage(main.prefix+"Mit §6/msg "+name+" <nachricht> §akann man schreiben!");
+			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Â§bNachricht schreiben")) {
+				p.sendMessage(main.prefix+"Mit Â§6/msg "+name+" <nachricht> Â§akann man schreiben!");
 				p.closeInventory();
 //				Baustelle
 			}
 			else
-			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cLöschen")) {
+			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Â§cLÃ¶schen")) {
 				p.performCommand("friend delete "+name);
 			}
 		}
