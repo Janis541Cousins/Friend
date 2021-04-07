@@ -49,11 +49,11 @@ public class CMD_friend implements CommandExecutor{
 							FriendManager.setOneSideOfFriend(p, target);
 							if(target.isOnline()) {
 								Player target1 = Bukkit.getPlayer(target.getName());
-								target1.sendMessage("§8<");
-								target1.sendMessage("§6"+p.getName()+" §ahat dich geaddet!");
+								target1.sendMessage("Â§8<");
+								target1.sendMessage("Â§6"+p.getName()+" Â§ahat dich geaddet!");
 								
 								IChatBaseComponent comp = ChatSerializer
-										.a("[{\"text\":\"§6[§aAnnehmen§6] \",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"§aAnnehmen\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/friend accept "+p.getName()+"\"}},{\"text\":\" §6[§cAblehnen§6] \",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"§cAblehnen\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/friend decline "+p.getName()+"\"}}]");
+										.a("[{\"text\":\"Â§6[Â§aAnnehmenÂ§6] \",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Â§aAnnehmen\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/friend accept "+p.getName()+"\"}},{\"text\":\" Â§6[Â§cAblehnenÂ§6] \",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Â§cAblehnen\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/friend decline "+p.getName()+"\"}}]");
 								PacketPlayOutChat chat = new PacketPlayOutChat(comp);
 								((CraftPlayer)target1).getHandle().playerConnection.sendPacket(chat);
 							}
@@ -71,11 +71,11 @@ public class CMD_friend implements CommandExecutor{
 					
 					if(FriendManager.isRAddedFriend(target, p)) {
 						FriendManager.setFriends(p, target);
-						p.sendMessage("§8<");
-						p.sendMessage(main.prefix+"Du bist nun mit §6"+target.getName()+" §abefreundet!");
+						p.sendMessage("Â§8<");
+						p.sendMessage(main.prefix+"Du bist nun mit Â§6"+target.getName()+" Â§abefreundet!");
 						if(target.isOnline()) {
-							Bukkit.getPlayer(target.getName()).sendMessage("§8<");
-							Bukkit.getPlayer(target.getName()).sendMessage(main.prefix+"Du bist nun mit §6"+p.getName()+"§a befreundet!");
+							Bukkit.getPlayer(target.getName()).sendMessage("Â§8<");
+							Bukkit.getPlayer(target.getName()).sendMessage(main.prefix+"Du bist nun mit Â§6"+p.getName()+"Â§a befreundet!");
 						}
 					}else {
 						p.sendMessage(main.prefixA+"Der Spieler hat dich nicht geaddet!");
@@ -87,11 +87,11 @@ public class CMD_friend implements CommandExecutor{
 					OfflinePlayer target = Bukkit.getOfflinePlayer(args[1]);
 					if(FriendManager.isRAddedFriend(target, p)) {
 						FriendManager.declineFriend(target, p);
-						p.sendMessage("§8<");
-						p.sendMessage(main.prefix+"Du hast die Freundschaftsanfrage von §6"+target.getName()+" §aabgelehnt!");
+						p.sendMessage("Â§8<");
+						p.sendMessage(main.prefix+"Du hast die Freundschaftsanfrage von Â§6"+target.getName()+" Â§aabgelehnt!");
 						if(target.isOnline()) {
-							Bukkit.getPlayer(target.getName()).sendMessage("§8<");
-							Bukkit.getPlayer(target.getName()).sendMessage(main.prefixA+"§6"+p.getName()+"§a hat deine Freundschaftsanfrage abgelehnt!");
+							Bukkit.getPlayer(target.getName()).sendMessage("Â§8<");
+							Bukkit.getPlayer(target.getName()).sendMessage(main.prefixA+"Â§6"+p.getName()+"Â§a hat deine Freundschaftsanfrage abgelehnt!");
 						}
 					}else {
 						p.sendMessage(main.prefixA+"Der Spieler hat dich nicht geaddet!");
