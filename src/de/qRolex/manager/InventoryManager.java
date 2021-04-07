@@ -86,13 +86,13 @@ public class InventoryManager {
 	
 	public static void openSkullInventory(Player p, String target) {
 		Inventory inv = INV_skullClick.skullInv(p, target);
-		if(inv.getName().equalsIgnoreCase("§6§lnull")) {
+		if(inv.getName().equalsIgnoreCase("Â§6Â§lnull")) {
 			for(Player ps : Bukkit.getOnlinePlayers()) {
 				if(ps.isOp()) {
 					ps.sendMessage("");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-					ps.sendMessage("§4§lBei §r§c"+target+"§4§l ist ein Fehler aufgetreten");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§4Â§lBei Â§rÂ§c"+target+"Â§4Â§l ist ein Fehler aufgetreten");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 					ps.sendMessage("");
 				}
 			}
@@ -104,13 +104,13 @@ public class InventoryManager {
 	
 	public static void openRequestInventory(Player p, String target) {
 		Inventory inv = INV_requests.inv(p, target);
-		if(inv.getName().equalsIgnoreCase("§6§lnull")) {
+		if(inv.getName().equalsIgnoreCase("Â§6Â§lnull")) {
 			for(Player ps : Bukkit.getOnlinePlayers()) {
 				if(ps.isOp()) {
 					ps.sendMessage("");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-					ps.sendMessage("§4§lBei §r§c"+target+"§4§l ist ein Fehler aufgetreten");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§4Â§lBei Â§rÂ§c"+target+"Â§4Â§l ist ein Fehler aufgetreten");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 					ps.sendMessage("");
 				}
 			}
@@ -125,7 +125,7 @@ public class InventoryManager {
 		for(Player target : Bukkit.getOnlinePlayers()) {
 			if(target == null) {return;}
 			if(friends.contains(target.getUniqueId().toString())) {
-				target.sendMessage("§6"+p.getName()+" §7ist jetzt §aonline.");
+				target.sendMessage("Â§6"+p.getName()+" Â§7ist jetzt Â§aonline.");
 			}
 		}
 	}
@@ -134,7 +134,7 @@ public class InventoryManager {
 		ArrayList<String> friends = InventoryManager.getFriendUUIDS(p);
 		for(Player target : Bukkit.getOnlinePlayers()) {
 			if(friends.contains(target.getUniqueId().toString())) {
-				target.sendMessage("§6"+p.getName()+" §7ist jetzt §coffline.");
+				target.sendMessage("Â§6"+p.getName()+" Â§7ist jetzt Â§coffline.");
 			}
 		}
 	}
@@ -160,9 +160,9 @@ public class InventoryManager {
 			for(Player ps : Bukkit.getOnlinePlayers()) {
 				if(ps.isOp()) {
 					ps.sendMessage("");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-					ps.sendMessage("§4§lBei §r§c"+target+"§4§l ist ein Fehler aufgetreten");
-					ps.sendMessage("§8§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					ps.sendMessage("Â§4Â§lBei Â§rÂ§c"+target+"Â§4Â§l ist ein Fehler aufgetreten");
+					ps.sendMessage("Â§8Â§kaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 					ps.sendMessage("");
 				}
 			}
